@@ -2,6 +2,8 @@
 
 Merhaba! ben **Tarık Yıldırım**. Ve karşınızda ana eğitimdeki ilk projem. Libft projesini kısaca özetleyeyim. Projenin zorunlu kısmında havuz sürecinde işlediğimiz projelerimizin genel bir tekrarını yapıyoruz. Bonus kısmında ise yeni bir şey öğreniyoruz ve "Linked List" yapısını işliyoruz.
 
+**Not:** Yazının devamında projeyi elimden geldiğince açıkladım. Lütfen bu açıklamaları yazdığım tarihte benimde bir öğrenci olduğumu unutmayın :) 
+
 # Proje Dosyaları
 
 Projemiz toplamda **44** adet dosyadan oluşmaktadır.
