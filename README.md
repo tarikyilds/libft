@@ -62,6 +62,9 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- char *s içerisinde char karakterleri tutan bir dizi olarakta tanımlanabilir.
 	- Ancak aslında, ramde bulunan belirli bir karakteri işaret eden ve index mantığıyla ilerlediğimizde sonraki karakterlere ulaşmamızı sağlayan  işaretçidir.
 	- char *'ın önüne const sınıfını getirdiğimizde char * içerisindeki değerler yalnız okunabilir (read only) olur.
+	- **Önemli:** While döngüsünün şartında bulunan **('\0')** döngünün sonuna gelindiği bildirir.
+		- Ancak bu opsiyonel bir seçenektir. 
+		- Yani bir başka yerde **const char \*s** dizisi doldurulurken son elemanına **\0** yerine başka bir karakter atandıysa bu sefer o karakteri kontrol etmemiz gerekir.
 	- Dönüş değeri const char *s in **işaretlediği alandaki** karakterlerin toplamıdır.
 
 - ***ft_memset***
@@ -82,3 +85,18 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- Amacı, src pointerının n uzunluğunda değerini dest pointerına kopyalamaktır.
 	- İşlem, fonksiyon içerisinde tanımlanan ve adresleri src ve dest pointerlarının adreslerine işaretlenmiş s ve d pointerları üzerinden gerçekleştirilir.
 	- Dönüş değeri fonksiyonun **void \*dest** parametresidir.
+
+- ***ft_memmove***
+	- Fonksiyon void *dst, const void *src ve size_t tipinde len değişkenlerini alır.
+	- **ft_memcpy** ile aynı işlemi yapar. 
+	- Farklı olarak dst pointerı src pointerından eleman sayısı olarak büyükse son indexten değilse ilk indexten kopyalama işlemine başlanır.
+	-  Dönüş değeri fonksiyonun **void \*dst** parametresidir.
+	
+- ***ft_strlcpy***
+	- Fonksiyon char *dst, const char *src ve size_t tipinde dstsize değişkenlerini alır.
+	- src pointerından dst pointerına dstsize uzunluğunda karakter kopyalar.
+	- **Not:** ft_memcpy, ft_memmove vb. fonksiyonlar işlemlerini parametrelerindeki pointerlerın adresini tutan başka pointerlar üzerinden yaparken **ft_strlcpy** vb. fonksiyonlar işlemlerini doğrudan parametrelerindeki fonksiyonlara uygular.
+	- Kopyalama işlemi bittikten sonra son index null (\0) ile sonlandırılır.
+	- **Dikkat:** Dizilerin sonuna (\0) koyma nedenimiz, işlemlerimizi yaparken dizinin sonuna geldiğimizi anlamamıza yardımcı olacak bir karaktere ihtiyaç duymamızdan kaynaklıdır.
+		- Örneğin bunun yerin int bir dizinin (int *) sonuna **-1** koyarak veya char bir dizinin (char *) sonuna **random bir karakter mesela 'a'** koyarak da bu işlemi yapabiliriz. 
+		- Bu durumda while döngüsü ile index i arttırıp elemanlarda gezerken son elemanı algılamak için -1 veya a karakterlerini kontrol etmemiz gerekir. 
