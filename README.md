@@ -63,3 +63,11 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- Ancak aslında, ramde bulunan belirli bir karakteri işaret eden ve index mantığıyla ilerlediğimizde sonraki karakterlere ulaşmamızı sağlayan  işaretçidir.
 	- char *'ın önüne const sınıfını getirdiğimizde char * içerisindeki değerler yalnız okunabilir (read only) olur.
 	- Dönüş değeri const char *s in **işaretlediği alandaki** karakterlerin toplamıdır.
+
+- ***ft_memset***
+	- Fonksiyon parametresinde void tipinde *b, int c ve size_t len değişkenlerini alır.
+	- len uzunluğunda c karakterini *b değişkenine atar.
+	- Asıl önemli kısım ise; bu işlemi yaparken doğrudan void *b üzerinden değil, *b'nin ram adresini işaretleyen ve fonksiyon içerisinde tanımlanan yeni bir **char \*dizi** değişkeni üzerinden yapmasıdır.
+	- **dizi = b** ataması sayesinde iki değişkende pointer olduğu için dizi b'nin adresini tutacak ve iki pointerdan herhangi birinde yapılacak bir değişiklik diğerininde değerini değiştirecektir.
+	- **libft** projesi genelinde mem (memory- bellek) ismiyle başlayan projelerin temel amaçları işlemleri adresleri birbirlerine eşlenmiş pointerlar üzerinden gerçekleştirmektir.
+	- Dönüş değeri, fonksiyon içerisinde tanımlanmış void pointerdır.
