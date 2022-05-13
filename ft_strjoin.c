@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 00:23:21 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/09 21:36:41 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:37:16 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	const char s1[] = "tarik";
@@ -46,4 +46,4 @@ int	main(void)
 
 	sonuc = ft_strjoin(s1, s2);
 	printf("Sonuç: %s", sonuc);
-}
+}*/

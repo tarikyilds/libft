@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 18:41:39 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/12 23:41:00 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:41:20 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(void)
 	int	index;
 
 	lst = ft_lstnew("tarik");
-	iki = ft_lstnew("dilek");
+	iki = ft_lstnew("yilds");
 	new = ft_lstnew("last item");
 
 	ft_lstadd_front(&lst, iki);

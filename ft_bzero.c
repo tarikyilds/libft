@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 18:13:57 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/07 04:23:47 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:20:02 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,9 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 /*
-#include<stdio.h>
 int	main(void)
 {
-	char	dizi[] = "tarikyildirim";
+	char	dizi[] = "tarik yildirim";
 	ft_bzero(dizi, 5);
 	printf("Değer: %s", dizi);
 }*/

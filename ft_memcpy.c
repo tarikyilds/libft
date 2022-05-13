@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 18:55:51 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/01/10 17:25:27 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:21:19 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 int	main(void)
 {
 	const char	src[] = "tarik";
-	char	dest[40];
+	char		dest[40];
+
 	size_t n = 3;
 	memcpy(dest, src, n);
 	printf("Değer: %s", dest);

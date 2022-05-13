@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 11:52:15 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/09 21:18:21 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:37:37 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	src[] = "tarik yildirim";
@@ -37,4 +37,4 @@ int	main(void)
 
 	dst = ft_strdup(src);
 	printf("Değer: %s", dst);
-}
+}*/

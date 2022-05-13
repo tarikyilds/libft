@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 12:42:22 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/01/10 22:54:16 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:21:51 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int	main(void)
 {
 	char		dst[] = "tarik";
 	const char	src[] = "yildirim";
+
 	size_t 		len = 3;
 	ft_memmove(dst, src, len);
 	printf("Değer: %s", dst);

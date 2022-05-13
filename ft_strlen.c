@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:11:49 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/01/07 12:29:22 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:14:42 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ size_t	ft_strlen(const char *s)
 	return (len);
 }
 /*
-#include<stdio.h>
 int	main(void)
 {
 	char	*dizi;

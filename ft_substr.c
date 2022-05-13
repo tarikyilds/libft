@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 23:58:09 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/09 22:05:05 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:36:47 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (dest);
 }
 /*
-#include<stdio.h>
 int	main(void)
 {
 	const char s[] = "tarikyilds";

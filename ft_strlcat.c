@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 22:16:35 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/07 06:29:35 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:32:00 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[i + j] = '\0';
 	return (i + count);
 }
-
+/*
 int	main(void)
 {
 	char	dst[] = "tarik";
 	char	src[] = "yildirim";
-	size_t size = 7;
 	size_t sonuc;
 
+	size_t size = 8;
 	sonuc = ft_strlcat(dst, src, size);
 	printf("Değer: %zu - Dst Value: %s Src Value: %s", sonuc, dst, src);
-}
+}*/

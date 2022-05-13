@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 01:28:17 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/10 00:16:39 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:37:55 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
+/*
 void	f(unsigned int n, char *s)
 {
 	(void)n;
@@ -37,4 +37,4 @@ int	main(void)
 {
 	char *s = "deneme";
 	ft_striteri(s, f);
-}
+}*/

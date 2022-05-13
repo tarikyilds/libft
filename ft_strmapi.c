@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 13:41:03 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/09 23:01:58 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:36:17 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 char f_or_tolower(unsigned int n, char c)
 {
 	int	i;
@@ -48,4 +48,4 @@ int	main(void)
 	char *sonuc;
 	sonuc = ft_strmapi(s, f_or_tolower);
 	printf("Sonuç: %s", sonuc);
-}
+}*/

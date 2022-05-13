@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 20:09:18 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/01/07 11:44:05 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 08:28:04 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 /*
 int	main(void)
 {
-	char dst[] = "tarik";
-	const char src[] = "dddbbg";
-	size_t size = 5;
+	char		dst[] = "tarik";
+	const char	src[] = "yilds";
 	size_t sonuc;
+
+	size_t size = 5;
 	sonuc = ft_strlcpy(dst, src, size);
 	printf("Değer: %zu", sonuc);
 }*/

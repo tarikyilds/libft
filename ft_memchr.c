@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 00:13:49 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/07 07:46:32 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:39:09 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
+/*
 int	main(void)
 {
 	const char *s = "tarik";
@@ -36,4 +36,4 @@ int	main(void)
 	size_t n = 4;
 	d = ft_memchr(s, r, n);
 	printf("Değer: %s - D değeri: %s", s, d);
-}
+}*/

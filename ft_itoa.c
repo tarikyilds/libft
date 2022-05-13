@@ -6,7 +6,7 @@
 /*   By: tyildiri <42istanbul.com.tr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 14:55:39 by tyildiri          #+#    #+#             */
-/*   Updated: 2022/05/09 22:42:49 by tyildiri         ###   ########.tr       */
+/*   Updated: 2022/05/13 06:39:41 by tyildiri         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	*ft_itoa(int n)
 	}
 	return (string);
 }
-
+/*
 int	main(void)
 {
 	char	*sonuc;
@@ -66,4 +66,4 @@ int	main(void)
 	sonuc = ft_itoa(2134);
 	deger = ft_itoa(-4567);
 	printf("Değer: %s -- %s", sonuc, deger);
-}
+}*/
