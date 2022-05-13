@@ -101,3 +101,20 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 		- Örneğin bunun yerin int bir dizinin (int *) sonuna **-1** koyarak veya char bir dizinin (char *) sonuna **random bir karakter mesela 'a'** koyarak da bu işlemi yapabiliriz. 
 		- Bu durumda while döngüsü ile index i arttırıp elemanlarda gezerken son elemanı algılamak için -1 veya a karakterlerini kontrol etmemiz gerekir. 
 	- Dönüş değeri **const char \*src** nin eleman sayısıdır.
+
+- ***ft_strlcat***
+	- Fonksiyon char *dst, const char *src ve size_t tipinde size değişkenlerini alır.
+	- src pointerından dst pointerına **size indexten itibaren** kopyalama işlemi yapar. 
+	- dst pointerının son indexine null (\0) karakterini atar.
+	- Dönüş değeri size + src pointerının eleman sayısıdır.
+
+- ***ft_toupper***
+	- Fonksiyon parametresinde int tipinde c değişkenini alır.
+	- Eğer **c** değişkeninden gelen karakter küçük harf ise karakteri büyük harfe dönüştürür ve karakteri geri döndürür. 
+	- Ascii decimal karşılığı **97-122** aralığında olan küçük harf karakterlerinden başka bir karakter gelirse bir işleme tabi tutulmadan aynı karakter geri döndürülür. 
+	- **Örneğin 'e' karakteri için;** e karakterinin ascii decimal değeri 101'dir. Bu değerden 32 çıkartıldığında 69 bulunur. 69 ise 'E' karakterinin ascii decimal değeridir.
+
+- ***ft_tolower***
+	- **ft_toupper** fonksiyonundaki işlemlerin neredeyse birebir aynısıdır. 
+	- Tek farkı bu sefer büyük harfi küçük harfe çeviririz. 
+	- Bu sebeple gelen karakter büyük harf ise karakterin ascii decimal değerine **+32** eklenir ve sonuç döndürülür.
