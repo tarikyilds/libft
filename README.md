@@ -100,3 +100,4 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- **Dikkat:** Dizilerin sonuna (\0) koyma nedenimiz, işlemlerimizi yaparken dizinin sonuna geldiğimizi anlamamıza yardımcı olacak bir karaktere ihtiyaç duymamızdan kaynaklıdır.
 		- Örneğin bunun yerin int bir dizinin (int *) sonuna **-1** koyarak veya char bir dizinin (char *) sonuna **random bir karakter mesela 'a'** koyarak da bu işlemi yapabiliriz. 
 		- Bu durumda while döngüsü ile index i arttırıp elemanlarda gezerken son elemanı algılamak için -1 veya a karakterlerini kontrol etmemiz gerekir. 
+	- Dönüş değeri **const char \*src** nin eleman sayısıdır.
