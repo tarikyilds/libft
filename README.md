@@ -16,3 +16,24 @@ Projemiz toplamda **44** adet dosyadan oluşmaktadır.
 
 TikTok Hesabım: [tarikyilds](https://www.tiktok.com/@tarikyilds) => 100K takipçili resmi hesabım.
 Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: [tarikyilds@gmail.com](tarikyilds@gmail.com)
+
+## Kısa Açıklamalar...
+
+ - ft_isdigit
+	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
+	 - **c** değişkeninin rakam olup olmadığı kontrol edilir.
+	 - Ascii tablosunda rakamlar decimal değere göre 48 - 57 arasındadır.
+	 - Dönüş değeri bulunan rakamın ascii decimal karşılığıdır.
+	 - **c** değişkeni rakam değilse 0 döner.
+ - ft_isalpha
+	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
+	 - **c** değişkeninin harf olup olmadığı kontrol edilir.
+	 - Ascii tablosunda harfler decimal değere göre 65-90 (büyük harfler) ve 97-122 (küçük harfler) arasındadır.
+	 -  Dönüş değeri bulunan harfin ascii decimal karşılığıdır.
+	 - **c** değişkeni harf değilse 0 döner.
+ - ft_isalnum
+	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
+	 - **c** değişkeninin harf veya rakam olup olmadığı kontrol edilir.
+	 - Ascii tablosunda decimal aralıkları sırayla; 48-57, 65-90 ve 97-122'dir.
+	 - Dönüş değeri bulunan karakterin decimal karşılığıdır.
+	 - **c** değişkeni harf veya rakam değilse 0 döner
