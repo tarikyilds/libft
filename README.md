@@ -71,3 +71,14 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- **dizi = b** ataması sayesinde iki değişkende pointer olduğu için dizi b'nin adresini tutacak ve iki pointerdan herhangi birinde yapılacak bir değişiklik diğerininde değerini değiştirecektir.
 	- **libft** projesi genelinde mem (memory- bellek) ismiyle başlayan projelerin temel amaçları işlemleri adresleri birbirlerine eşlenmiş pointerlar üzerinden gerçekleştirmektir.
 	- Dönüş değeri, fonksiyon içerisinde tanımlanmış void pointerdır.
+
+- ***ft_bzero***
+	- Fonksiyon parametresinde void tipinde *s ve size_t tipinde n değişkenlerini alır.
+	- s pointerının n sayısında elemanına **null (\0)** değerini atar.
+	- Dönüş değeri yoktur. Amacı verilen pointerı sıfırlamaktır.
+
+- ***ft_memcpy***
+	- Fonksiyon void *dest, const void *src ve size_t tipinde n değişkenlerini alır.
+	- Amacı, src pointerının n uzunluğunda değerini dest pointerına kopyalamaktır.
+	- İşlem, fonksiyon içerisinde tanımlanan ve adresleri src ve dest pointerlarının adreslerine işaretlenmiş s ve d pointerları üzerinden gerçekleştirilir.
+	- Dönüş değeri fonksiyonun **void \*dest** parametresidir.
