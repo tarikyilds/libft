@@ -19,21 +19,38 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 
 ## Kısa Açıklamalar...
 
- - ft_isdigit
+ - ***ft_isdigit***
 	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
 	 - **c** değişkeninin rakam olup olmadığı kontrol edilir.
 	 - Ascii tablosunda rakamlar decimal değere göre 48 - 57 arasındadır.
 	 - Dönüş değeri bulunan rakamın ascii decimal karşılığıdır.
 	 - **c** değişkeni rakam değilse 0 döner.
- - ft_isalpha
+
+ - ***ft_isalpha***
 	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
 	 - **c** değişkeninin harf olup olmadığı kontrol edilir.
 	 - Ascii tablosunda harfler decimal değere göre 65-90 (büyük harfler) ve 97-122 (küçük harfler) arasındadır.
 	 -  Dönüş değeri bulunan harfin ascii decimal karşılığıdır.
 	 - **c** değişkeni harf değilse 0 döner.
- - ft_isalnum
+
+ - ***ft_isalnum***
 	 - Fonksiyon parametresinde int tipinde c değişkeni alır.
 	 - **c** değişkeninin harf veya rakam olup olmadığı kontrol edilir.
 	 - Ascii tablosunda decimal aralıkları sırayla; 48-57, 65-90 ve 97-122'dir.
 	 - Dönüş değeri bulunan karakterin decimal karşılığıdır.
 	 - **c** değişkeni harf veya rakam değilse 0 döner
+
+- ***ft_isascii***
+	- Ascii tablosunda decimal değere göre 0-127 arası karakterler main ascii karakterleri olarak kabul edilir. 
+	- 128-255 arası karakterler ise extended ascii karakterleri olarak geçer.
+	- Fonksiyon parametresinde int tipinde c değişkeni alır.
+	- **c** değişkeninin ascii decimal karşılığının 0-127 aralığında olup olmadığı kontrol edilir.
+	- Dönüş değeri, kontrol işlemi doğru ise **1** değil ise **0** olarak belirlenir.
+
+- ***ft_isprint***
+	- Ascii tablosunda decimal değere göre 32-126 arası karakterler printable karakterlerdir.
+	- Yine decimal değere göre 0-31 arası karakterler ve 127 karakteri ise non-printable karakterler olarak geçer.
+	- Printable karakterler ekrana yazdırabilirken non-printable karakterler ekrana yazdırılamazlar. 
+	- Fonksiyon parametresinde int tipinde c değişkeni alır.
+	- **c** değişkeninin ascii decimal karşılığının 32-126 aralığında olup olmadığı kontrol edilir.
+	- Dönüş değeri, karakter printable ise **decimal karşılığı** değilse **0** olarak belirlenir.
