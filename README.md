@@ -149,3 +149,26 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 - ***ft_memcmp***
 	- Fonksiyon parametresinde const void *s1, const void *s2 ve size_t tipinde n değişkenlerini alır.
 	- **ft_strncmp** ile arasındaki fark, ft_memcmp fonksiyonunda yapılan işlemler s1 ve s2 pointerlarının adres değerlerini tutan **unsigned char \*** değişkenler üzerinden yürütülür.
+
+- ***ft_strnstr***
+	- Fonksiyon parametresinde const  char *str, const  char *aranan ve size_t tipinde len değişkenini alır.
+	- str pointerının içerisinde len uzunluğunda aranan pointerının **tüm karakterlerini** arar.
+	- Eğer aranan pointerının tüm karakterleri str pointerında mevcut ise aranan pointerının ilk karakterine denk gelen str pointerının indexinin adresi döndürülür.
+		- **Örn:** \*aranan = kyil; *str= tarikyildirim;
+		- **Return:** &str[4] (4. indexin adresi)
+
+- ***ft_atoi***
+	- Fonksiyon parametresinde const char tipinde *str değişkenini alır.
+	- **Amacı:** string bir metinden (char array veya char *) rakamları alıp negatif veya pozitif bir sayıya çevirip döndürmektir.
+	- Öncelikle ascii decimal değeri **0-13** olan karakterler ve **boşluk** karakteri geçilene kadar index arttırılır. 
+	- Burada dizinin başındaki tab, boşluk gibi işlemimiz için anlam ifade etmeyen karakterleri geçmiş oluyoruz.
+	- Ardından **ilk** ulaşılan karakterin "- veya +" olup olmadığına bakılır.
+		- Eğer karakter **-** ise başta **1** olarak atanmış pn değeri **-1** olarak değiştirilir. Dönüş işlemi esnasında **sonuc**, pn değeri ile çarpılacaktır.
+		- Eğer karakter **+** ise veya ikiside değilse pn **1** olarak bırakılır.
+		- Ardından gelen karaktere ulaşmak için index bir arttırılır.
+	- Eğer sıradaki karakter rakam ise while döngüsü çalışır ve gelen karakter **rakam** olmaya devam ettiği sürece çalışmaya devam eder.
+		- Döngü içerisinde **sonuc** değişkeni her defasında **10** ile çarpılarak basamak arttırılır.
+		- Ardından, gelen rakamın ascii decimal karşılığından **48** çıkarılıp elde edilen sayı sonuca eklenir.
+		- **Örn:** sayı = 4 için; 4'ün ascii dec karşılığı 52'dir.
+		- 52 - 48 = 4 rakamını verir. Ve bu rakam sonuc değişkenine eklenir.
+	- Dönüş kısmında **sonuc** değişkeni **pn** değişkeni ile çarpılarak çıkan sonuç döndürülür.
