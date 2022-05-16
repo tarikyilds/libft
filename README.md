@@ -185,3 +185,11 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- **ft_bzero** kullanılarak tahsis edilen belleğin tamamı sıfır **(\0)** ile doldurulur.
 	- Dönüş değeri bellek bloğu tahsis edilmiş ve tahsis edilen alanı sıfır değer ile doldurulmuş **void \*src**dir.
 	- **Yakalama işleminde cast edilir:** char *str = **(char \*)** ft_calloc(3, sizeof(char));
+
+- ***ft_strdup***
+	- Fonksiyon const char tipinde *s1 değişkenini alır.
+	- **Amacı:** s1 pointerının işaret ettiği alandaki karakterleri fonksiyon içinde yeni tanımlanmış ve malloc ile bellekte alan tahsis edilmiş **char \*dest** değişkenine atamaktır.
+	- Malloc ile alan açılırken **sizeof(char)** ile char tipinin byte değeri alınır.
+	- Ardından bu değer s1 pointerının eleman sayısıyla çarpılır.
+	- s1 pointerının değeri dest pointerına atandıktan sonra dest pointerının son indexine null **(\0)** atanır.
+	- Dönüş değeri dest pointerıdır.
