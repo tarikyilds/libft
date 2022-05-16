@@ -118,3 +118,34 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 	- **ft_toupper** fonksiyonundaki işlemlerin neredeyse birebir aynısıdır. 
 	- Tek farkı bu sefer büyük harfi küçük harfe çeviririz. 
 	- Bu sebeple gelen karakter büyük harf ise karakterin ascii decimal değerine **+32** eklenir ve sonuç döndürülür.
+
+- ***ft_strchr***
+	- Fonksiyon parametresinde const char *s ve int tipince c değişkenlerini alır.
+	- **Amacı:** Verilen s pointerının işaret ettiği adresten itibaren karakterleri gezmek ve **c** karakterini bulmaktır.
+	- Bunu yapabilmek için null (\0) karakter bulunana kadar indexi arttırır. 
+	- Eğer aranan **c** karakteri bulunursa **&** operatörü ile bulunan karakterin adresi döndürülür. 
+	- Eğer aranan c karakteri **\0** ise bu karakterin adresi döndürülür.
+	- Eğer karakter bulunamazsa **NULL** döndürülür.
+
+- ***ft_strrchr***
+	- Fonksiyon parametresinde const char *s ve int tipince c değişkenlerini alır.
+	- **Şahsen** ft_strchr ve ft_strrchr arasındaki tek fark **strchr** bulunan karakteri parametresinde verilen pointer üzerinden döndürürken **strrchr** bulunan karakteri fonksiyon içinde tanımladığı yeni bir **char \*** üzerinden döndürür.
+
+- ***ft_strncmp***
+	- Fonksiyon parametresinde const char *s1, const char *2 ve size_t tipinde n değişkenlerini alır.
+	- **Kullanım amacı** verilen iki char * arasında **n** uzunluğunda karakteri karşılaştırmaktır.
+		- Sonuç **0** ise karakterler eşittir.
+		- Sonuç **0'dan küçük** ise s1 < s2
+		- Sonuç **0'dan büyük** ise s1 > s2
+
+- ***ft_memchr***
+	- Fonksiyon parametresinde const void *s, int c, ve size_t tipinde n değişkenlerini alır.
+	- s pointerının içerisinde n uzunluğunda indexte c karakterini arar.
+	- İşlemi fonksiyon içerisinde yeni tanımlanan ve **s** pointerının adres değerini tutan **src** pointerı üzerinden yürütür.
+	- **Dikkat:** "src = (unsigned char *)s;" ataması esnasında parantez içerisinde yapılan işlem **cast** işlemidir.
+		- s pointerı void tipinde olduğu için src pointerına buradan gelecek değerin **unsigned char \*** tipinde olacağı belirtilir.
+	- Aranan karakter bulunursa karakterin **adresini** bulunamazsa NULL döndürür.
+
+- ***ft_memcmp***
+	- Fonksiyon parametresinde const void *s1, const void *s2 ve size_t tipinde n değişkenlerini alır.
+	- **ft_strncmp** ile arasındaki fark, ft_memcmp fonksiyonunda yapılan işlemler s1 ve s2 pointerlarının adres değerlerini tutan **unsigned char \*** değişkenler üzerinden yürütülür.
