@@ -172,3 +172,16 @@ Instagram: [tarikyilds](https://www.instagram.com/tarikyilds/) | Gmail adresim: 
 		- **Örn:** sayı = 4 için; 4'ün ascii dec karşılığı 52'dir.
 		- 52 - 48 = 4 rakamını verir. Ve bu rakam sonuc değişkenine eklenir.
 	- Dönüş kısmında **sonuc** değişkeni **pn** değişkeni ile çarpılarak çıkan sonuç döndürülür.
+
+- ***ft_calloc***
+	- Fonksiyon parametresinde size_t tipinde count ve size değişkenlerini alır.
+	- **Amacı:** tıpkı malloc gibi verilen size ve count değerleri kadar **bellek bloğu** tahsis edilmesini sağlayan fonksiyondur.
+	- Başlangıçta void tipinde *src değişkeni tanımlanır.
+	- Bu değişkene mallocla count ve size değişkenlerinin çarpımı kadar alan açılır. 
+		- **Örn:** char *str = ft_calloc(3, sizeof(char));
+		- char tipinin ramde kapladığı alan 1 bytedır.
+		- 3*1 = 3.. str pointerı için bellekte 3 bytelık alan tahsis edilir.
+		- Ardından *str şöyle doldurulabilir: str = {a, b, \0};
+	- **ft_bzero** kullanılarak tahsis edilen belleğin tamamı sıfır **(\0)** ile doldurulur.
+	- Dönüş değeri bellek bloğu tahsis edilmiş ve tahsis edilen alanı sıfır değer ile doldurulmuş **void \*src**dir.
+	- **Yakalama işleminde cast edilir:** char *str = **(char \*)** ft_calloc(3, sizeof(char));
